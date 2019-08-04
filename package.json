@@ -1,0 +1,41 @@
+{
+  "name": "vue-easy-lightbox",
+  "version": "0.3.11",
+  "description": "Very lightweight, JavaScript-only, lightbox plugin for Vue.js",
+  "private": false,
+  "author": "Zichao Xiong <onycat@live.cn>",
+  "license": "MIT",
+  "main": "dist/vue-easy-lightbox.common.js",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "lint": "vue-cli-service lint",
+    "build:demo": "vue-cli-service build --dest build",
+    "build:no-babel": "vue-cli-service build --mode nobabel --target lib --name vue-easy-lightbox --dest .temp/no-babel ./src/index.js",
+    "build:with-babel": "vue-cli-service build --target lib --name vue-easy-lightbox --dest .temp/babel ./src/index.js",
+    "build:prod": "bin/build.sh",
+    "deploy:demo": "bin/deploy-demo.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/XiongAmao/vue-easy-lightbox.git"
+  },
+  "bugs": {
+    "url": "https://github.com/XiongAmao/vue-easy-lightbox/issues"
+  },
+  "homepage": "https://github.com/XiongAmao/vue-easy-lightbox#readme",
+  "dependencies": {
+    "vue": "^2.5.21"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.2.2",
+    "@vue/cli-plugin-eslint": "^3.2.2",
+    "@vue/cli-service": "^3.8.4",
+    "@vue/eslint-config-standard": "^4.0.0",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.11.1",
+    "eslint-plugin-vue": "^5.1.0",
+    "node-sass": "^4.11.0",
+    "sass-loader": "^7.0.1",
+    "vue-template-compiler": "^2.5.21"
+  }
+}
